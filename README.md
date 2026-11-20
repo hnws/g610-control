@@ -121,3 +121,11 @@ python3 -m pytest
 ```
 
 The tests run without a keyboard, against the feature table of a real G610.
+
+## Licence
+
+G610 Control is free software, released under the GNU General Public License, version 3.
+See [LICENSE](LICENSE). It comes with no warranty.
+
+The key names and the per-key packet layout follow
+[g810-led](https://github.com/MatMoul/g810-led) (GPL-3.0), which made this possible.

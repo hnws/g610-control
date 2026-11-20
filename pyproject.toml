@@ -3,13 +3,15 @@ name = "g610-control"
 version = "0.1.0"
 description = "Lighting and settings GUI for the Logitech G610 keyboard on Linux"
 requires-python = ">=3.10"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
 dependencies = ["PySide6>=6.5"]
 
 [project.gui-scripts]
 g610-control = "g610ctl.app:main"
 
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]

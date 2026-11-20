@@ -1,0 +1,22 @@
+[project]
+name = "g610-control"
+version = "0.1.0"
+description = "Lighting and settings GUI for the Logitech G610 keyboard on Linux"
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.5"]
+
+[project.gui-scripts]
+g610-control = "g610ctl.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["g610ctl", "g610ctl.ui"]
+
+[tool.setuptools.package-data]
+g610ctl = ["data/*.svg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
